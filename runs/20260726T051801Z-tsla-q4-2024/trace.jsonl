@@ -1,0 +1,10 @@
+{"event": "run_started", "run_id": "20260726T051801Z-tsla-q4-2024", "scoring_mode": "deterministic_audit", "sequence": 1, "timestamp": "2026-07-26T05:18:01.175+00:00"}
+{"event": "tool_call_started", "offline": true, "sequence": 2, "source_id": "tsla-2024-10k", "timestamp": "2026-07-26T05:18:01.619+00:00", "tool": "sec_filing_fetch", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"}
+{"bytes": 2596459, "event": "tool_call_completed", "http_status": 0, "sequence": 3, "sha256": "2a5dc10024afd96cf71f154c949759123c1da05715fb574866eaba6e1ec3bb18", "source_id": "tsla-2024-10k", "timestamp": "2026-07-26T05:18:01.629+00:00", "tool": "sec_filing_fetch"}
+{"event": "tool_call_started", "offline": true, "sequence": 4, "source_id": "tsla-2024-q3-10q", "timestamp": "2026-07-26T05:18:01.630+00:00", "tool": "sec_filing_fetch", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"}
+{"bytes": 1502670, "event": "tool_call_completed", "http_status": 0, "sequence": 5, "sha256": "7e36bd2c4fbe93dd0ab5f0f98199fd7253ff4869b47d63738cca1f0d5d2f92fb", "source_id": "tsla-2024-q3-10q", "timestamp": "2026-07-26T05:18:01.636+00:00", "tool": "sec_filing_fetch"}
+{"event": "agent_step_started", "sequence": 6, "step": "parse_and_derive_xbrl_revenue", "timestamp": "2026-07-26T05:18:01.639+00:00"}
+{"event": "agent_step_completed", "reconciliation": "pass", "sequence": 7, "step": "parse_and_derive_xbrl_revenue", "timestamp": "2026-07-26T05:18:01.703+00:00"}
+{"event": "scoring_started", "grader": "samaya-ai/frontier-finance.Grader", "judge": "deterministic-audit-v1", "sequence": 8, "timestamp": "2026-07-26T05:18:01.711+00:00"}
+{"event": "scoring_completed", "num_qualified": 14, "num_rubrics": 16, "sequence": 9, "timestamp": "2026-07-26T05:18:01.712+00:00"}
+{"event": "run_completed", "sequence": 10, "status": "completed_with_findings", "timestamp": "2026-07-26T05:18:01.720+00:00"}

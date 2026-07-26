@@ -1,0 +1,7 @@
+{"event": "run_started", "run_id": "20260726T050037Z-tsla-q4-2024", "scoring_mode": "deterministic_audit", "sequence": 1, "timestamp": "2026-07-26T05:00:37.096+00:00"}
+{"event": "tool_call_started", "offline": false, "sequence": 2, "source_id": "tsla-2024-10k", "timestamp": "2026-07-26T05:00:37.577+00:00", "tool": "sec_filing_fetch", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"}
+{"bytes": 2596459, "event": "tool_call_completed", "http_status": 200, "sequence": 3, "sha256": "2a5dc10024afd96cf71f154c949759123c1da05715fb574866eaba6e1ec3bb18", "source_id": "tsla-2024-10k", "timestamp": "2026-07-26T05:00:52.731+00:00", "tool": "sec_filing_fetch"}
+{"event": "tool_call_started", "offline": false, "sequence": 4, "source_id": "tsla-2024-q3-10q", "timestamp": "2026-07-26T05:00:52.732+00:00", "tool": "sec_filing_fetch", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"}
+{"bytes": 1502670, "event": "tool_call_completed", "http_status": 200, "sequence": 5, "sha256": "7e36bd2c4fbe93dd0ab5f0f98199fd7253ff4869b47d63738cca1f0d5d2f92fb", "source_id": "tsla-2024-q3-10q", "timestamp": "2026-07-26T05:01:04.658+00:00", "tool": "sec_filing_fetch"}
+{"event": "agent_step_started", "sequence": 6, "step": "parse_and_derive_xbrl_revenue", "timestamp": "2026-07-26T05:01:04.661+00:00"}
+{"category": "agent_failure", "event": "run_failed", "exception_type": "ValueError", "message": "Could not parse numeric XBRL fact from ''", "sequence": 7, "timestamp": "2026-07-26T05:01:04.679+00:00"}

@@ -1,0 +1,6 @@
+{
+  "category": "agent_failure",
+  "exception_type": "ValueError",
+  "message": "Could not parse numeric XBRL fact from ''",
+  "timestamp": "2026-07-26T05:01:04.679+00:00"
+}

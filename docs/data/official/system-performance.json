@@ -1,0 +1,172 @@
+{
+  "runs": [
+    {
+      "id": "samaya-system",
+      "run_name": "samaya-system",
+      "label": "samaya-system",
+      "system": "samaya-composite",
+      "models": [
+        "samaya"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.508272,
+      "cost_per_query": 0.9656,
+      "latency_per_query": 218.1,
+      "total_cost": 212.44
+    },
+    {
+      "id": "fa-v2-opus-4-8",
+      "run_name": "fa-v2-opus-4-8",
+      "label": "fa-v2-opus-4-8",
+      "system": "finance-agent-v2",
+      "models": [
+        "claude-opus-4-8"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.450399,
+      "cost_per_query": 2.6109,
+      "latency_per_query": 155.8,
+      "total_cost": 574.4
+    },
+    {
+      "id": "fa-v2-fable-5",
+      "run_name": "fa-v2-fable-5",
+      "label": "fa-v2-fable-5",
+      "system": "finance-agent-v2",
+      "models": [
+        "claude-fable-5"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.491922,
+      "cost_per_query": 4.0592,
+      "latency_per_query": 164.5,
+      "total_cost": 893.02
+    },
+    {
+      "id": "fa-v2-kimi-k2-6",
+      "run_name": "fa-v2-kimi-k2-6",
+      "label": "fa-v2-kimi-k2-6",
+      "system": "finance-agent-v2",
+      "models": [
+        "kimi-k2.6"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.323175,
+      "cost_per_query": 0.9487,
+      "latency_per_query": 201.1,
+      "total_cost": 208.72
+    },
+    {
+      "id": "fa-v2-glm-5-2",
+      "run_name": "fa-v2-glm-5-2",
+      "label": "fa-v2-glm-5-2",
+      "system": "finance-agent-v2",
+      "models": [
+        "glm-5.2"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.42775,
+      "cost_per_query": 0.6276,
+      "latency_per_query": 296.5,
+      "total_cost": 138.07
+    },
+    {
+      "id": "fa-v2-deepseek-v4-pro",
+      "run_name": "fa-v2-deepseek-v4-pro",
+      "label": "fa-v2-deepseek-v4-pro",
+      "system": "finance-agent-v2",
+      "models": [
+        "deepseek-v4-pro"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.405397,
+      "cost_per_query": 0.677,
+      "latency_per_query": 202.6,
+      "total_cost": 148.93
+    },
+    {
+      "id": "fa-v2-gpt-5-5",
+      "run_name": "fa-v2-gpt-5-5",
+      "label": "fa-v2-gpt-5-5",
+      "system": "finance-agent-v2",
+      "models": [
+        "gpt-5.5"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.434736,
+      "cost_per_query": 2.8005,
+      "latency_per_query": 233,
+      "total_cost": 616.11
+    },
+    {
+      "id": "fa-v2-gpt-5-6-sol",
+      "run_name": "fa-v2-gpt-5-6-sol",
+      "label": "fa-v2-gpt-5-6-sol",
+      "system": "finance-agent-v2",
+      "models": [
+        "gpt-5.6-sol"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.4683,
+      "cost_per_query": 3.0324,
+      "latency_per_query": 170.7,
+      "total_cost": 667.13
+    },
+    {
+      "id": "fa-v2-gemini-3-1-pro",
+      "run_name": "fa-v2-gemini-3-1-pro",
+      "label": "fa-v2-gemini-3-1-pro",
+      "system": "finance-agent-v2",
+      "models": [
+        "gemini-3.1-pro"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.305132,
+      "cost_per_query": 1.7228,
+      "latency_per_query": 221.9,
+      "total_cost": 379.01
+    },
+    {
+      "id": "web-search-gpt-5-5",
+      "run_name": "web-search-gpt-5-5",
+      "label": "web-search-gpt-5-5",
+      "system": "web-search",
+      "models": [
+        "gpt-5.5"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.207298,
+      "cost_per_query": 0.5464,
+      "latency_per_query": 192.1,
+      "total_cost": 120.21
+    },
+    {
+      "id": "web-search-opus-4-8",
+      "run_name": "web-search-opus-4-8",
+      "label": "web-search-opus-4-8",
+      "system": "web-search",
+      "models": [
+        "claude-opus-4-8"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.329841,
+      "cost_per_query": 1.4737,
+      "latency_per_query": 53.9,
+      "total_cost": 324.22
+    },
+    {
+      "id": "web-search-gemini-3-1-pro",
+      "run_name": "web-search-gemini-3-1-pro",
+      "label": "web-search-gemini-3-1-pro",
+      "system": "web-search",
+      "models": [
+        "gemini-3.1-pro"
+      ],
+      "num_records": 220,
+      "qualification_rate": 0.307154,
+      "cost_per_query": 0.2406,
+      "latency_per_query": 91.1,
+      "total_cost": 52.94
+    }
+  ]
+}

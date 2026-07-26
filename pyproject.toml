@@ -1,0 +1,46 @@
+[project]
+name = "frontier-finance-repro"
+version = "0.1.0"
+description = "Auditable reproduction harness and research artifacts for Samaya FrontierFinance."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.13"
+dependencies = [
+  "frontier-finance @ git+https://github.com/samaya-ai/frontier-finance.git@7d2d9c2a54816e94fb9e2e6a1cb033cc9dfcb589",
+]
+
+[project.optional-dependencies]
+official-judges = [
+  "anthropic>=0.49",
+  "google-genai>=0.3",
+  "openai>=1.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=9",
+  "ruff>=0.15.20",
+]
+
+[project.scripts]
+ffrepro = "ffrepro.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ffrepro"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

@@ -1,0 +1,45 @@
+{
+    "algorithm":  "sha256",
+    "artifacts":  [
+                      {
+                          "bytes":  13,
+                          "path":  "command.txt",
+                          "sha256":  "96a97385c2f19b73cb81f5fb8fa9093c5c14d04b3e61e0e6ccf3019a7f3e7e15"
+                      },
+                      {
+                          "bytes":  174,
+                          "path":  "failure.json",
+                          "sha256":  "a9be7790624973b17f5436a4e0c23004b34e570f6d0d7ff8d33f26641e462124"
+                      },
+                      {
+                          "bytes":  2797,
+                          "path":  "run_manifest.json",
+                          "sha256":  "f9159908d01c764bf0694630851af22ad39291d19f06fe389d20ef16f7b702b1"
+                      },
+                      {
+                          "bytes":  1041,
+                          "path":  "source_manifest.json",
+                          "sha256":  "01d2e9b2432bf9856594c1f509dd97dfd83a627a6812640c5ae4de57230496f1"
+                      },
+                      {
+                          "bytes":  2596459,
+                          "path":  "sources/tsla-2024-10k.htm",
+                          "sha256":  "2a5dc10024afd96cf71f154c949759123c1da05715fb574866eaba6e1ec3bb18"
+                      },
+                      {
+                          "bytes":  1502670,
+                          "path":  "sources/tsla-2024-q3-10q.htm",
+                          "sha256":  "7e36bd2c4fbe93dd0ab5f0f98199fd7253ff4869b47d63738cca1f0d5d2f92fb"
+                      },
+                      {
+                          "bytes":  1572,
+                          "path":  "trace.jsonl",
+                          "sha256":  "e42bd7da149308fd49c52a3a3f4a650141a4b5b0209ce479509c78c8868b83cb"
+                      }
+                  ],
+    "generated_at":  "2026-07-26T05:01:04.683+00:00",
+    "public_snapshot":  {
+                            "source_commit":  "8230bf1ae4b894a2be20d31fe45e8f633646aaa9",
+                            "change":  "portable command-path redaction; hashes recomputed for shipped artifacts"
+                        }
+}

@@ -1,0 +1,23 @@
+{
+  "query_id": "097d482fc529c5f0",
+  "cik": "0001318605",
+  "ticker": "TSLA",
+  "query_date": "2025-02-04",
+  "currency_scale": "USD millions",
+  "sources": [
+    {
+      "id": "tsla-2024-10k",
+      "form": "10-K",
+      "filed": "2025-01-29",
+      "period_end": "2024-12-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"
+    },
+    {
+      "id": "tsla-2024-q3-10q",
+      "form": "10-Q",
+      "filed": "2024-10-24",
+      "period_end": "2024-09-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+    }
+  ]
+}

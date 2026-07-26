@@ -1,0 +1,32 @@
+{
+  "snapshot_commit": "21da0514a15c51774ff836c46f290681c0ad91ee",
+  "sha256": "a82874d7a587baf6f1ebe79b95fa1c3090260d3661c544f4496056d338e313c4",
+  "queries": 220,
+  "rubrics": 11543,
+  "must_have_rubrics": 7487,
+  "nice_to_have_rubrics": 4056,
+  "rubrics_per_query": {"min": 3, "median": 27, "max": 475, "mean": 52.46818181818182},
+  "rubric_types": {
+    "Analysis & Interpretation": 558,
+    "Comparative Analysis": 264,
+    "Factual Data Extraction": 8547,
+    "Format & Presentation": 131,
+    "Forward-Looking Information": 814,
+    "Inquiry & Question Generation": 78,
+    "Qualitative & Contextual Information": 1039,
+    "Source & Methodology": 112
+  },
+  "data_source_types": {
+    "academic_and_research_publications": 37,
+    "alternative_data": 16,
+    "company_originated_content": 2897,
+    "industry_and_market_reports": 81,
+    "market_data": 842,
+    "na": 510,
+    "news_and_media_sources": 268,
+    "professional_knowledge": 2220,
+    "regulatory_and_legal_data": 134,
+    "sec_filing": 4538
+  }
+}
+

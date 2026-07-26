@@ -1,0 +1,30 @@
+[
+  {
+    "bytes": 2596459,
+    "cutoff_check": "pass",
+    "fetch_started_at": "2026-07-26T05:18:01.619+00:00",
+    "fetched_at": "2026-07-26T05:18:01.626+00:00",
+    "filed": "2025-01-29",
+    "form": "10-K",
+    "http_status": 0,
+    "id": "tsla-2024-10k",
+    "local_path": "tsla-2024-10k.htm",
+    "period_end": "2024-12-31",
+    "sha256": "2a5dc10024afd96cf71f154c949759123c1da05715fb574866eaba6e1ec3bb18",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"
+  },
+  {
+    "bytes": 1502670,
+    "cutoff_check": "pass",
+    "fetch_started_at": "2026-07-26T05:18:01.630+00:00",
+    "fetched_at": "2026-07-26T05:18:01.634+00:00",
+    "filed": "2024-10-24",
+    "form": "10-Q",
+    "http_status": 0,
+    "id": "tsla-2024-q3-10q",
+    "local_path": "tsla-2024-q3-10q.htm",
+    "period_end": "2024-09-30",
+    "sha256": "7e36bd2c4fbe93dd0ab5f0f98199fd7253ff4869b47d63738cca1f0d5d2f92fb",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+  }
+]

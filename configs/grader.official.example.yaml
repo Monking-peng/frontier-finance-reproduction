@@ -1,0 +1,18 @@
+# Official-comparability target: this is the panel and batching configuration
+# published in Samaya AI's grader repository at the pinned upstream commit.
+rubrics_path: data/original/frontier_finance_public.jsonl
+responses_path: runs/YOUR_RUN/system_summaries.json
+output_dir: runs/YOUR_RUN/official_grader
+
+judge_models:
+  - claude-sonnet-4-6
+  - gemini-3.1-pro-preview
+  - gpt-5.4
+
+max_rubrics_per_call: 30
+concurrency: 8
+max_tokens: 32000
+request_timeout: 120.0
+max_retries: 2
+max_json_parse_retries: 1
+

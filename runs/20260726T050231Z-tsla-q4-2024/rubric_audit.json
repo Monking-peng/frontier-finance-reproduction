@@ -1,0 +1,24 @@
+[
+  {
+    "category": "scoring_anomaly",
+    "explanation": "Source-derived response value 19798 USDm rounds to 19800.0 USDm at the rubric precision; target is 19700.0 USDm.",
+    "finding_id": "rubric-reference-4",
+    "rubric_id": 4,
+    "rubric_target_usd_millions": "19700.0",
+    "rubric_text": "States that Tesla, Inc. (TSLA) reported automotive segment revenue of USD 19.7 billion in Q4 2024.",
+    "score_treatment": "failed under the published rubric; not silently corrected",
+    "source_derived_value_usd_millions": "19798",
+    "status": "confirmed_in_demo_sources"
+  },
+  {
+    "category": "scoring_anomaly",
+    "explanation": "Source-derived response value 18659 USDm rounds to 18660.00 USDm at the rubric precision; target is 18830.00 USDm.",
+    "finding_id": "rubric-reference-7",
+    "rubric_id": 7,
+    "rubric_target_usd_millions": "18830.00",
+    "rubric_text": "States that Tesla, Inc. (TSLA) reported automotive sales revenue of USD 18.83 billion under the Automotive segment in Q4 2024.",
+    "score_treatment": "failed under the published rubric; not silently corrected",
+    "source_derived_value_usd_millions": "18659",
+    "status": "confirmed_in_demo_sources"
+  }
+]

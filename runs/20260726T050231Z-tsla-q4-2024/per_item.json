@@ -1,0 +1,268 @@
+[
+  {
+    "failed": false,
+    "failed_checks_by_judge": {},
+    "failure_reason": null,
+    "judgements": [
+      {
+        "audit_reason": "The response contains separate Q4 and FY revenue tables.",
+        "comparison": null,
+        "data_source_type": "na",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 1,
+        "rubric_type": "Format & Presentation"
+      },
+      {
+        "audit_reason": "The response identifies Q4 2024 and the December 31, 2024 period end.",
+        "comparison": null,
+        "data_source_type": "professional_knowledge",
+        "must_have": true,
+        "qualified": true,
+        "rubric_id": 2,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 25707 USDm rounds to 25700.0 USDm at the rubric precision; target is 25700.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "25707",
+          "match": true,
+          "metric": "total_revenue",
+          "period": "q4",
+          "rounded_actual_usd_millions": "25700.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "25700.0"
+        },
+        "data_source_type": "company_originated_content",
+        "must_have": true,
+        "qualified": true,
+        "rubric_id": 3,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 19798 USDm rounds to 19800.0 USDm at the rubric precision; target is 19700.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "19798",
+          "match": false,
+          "metric": "total_automotive",
+          "period": "q4",
+          "rounded_actual_usd_millions": "19800.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "19700.0"
+        },
+        "data_source_type": "company_originated_content",
+        "must_have": true,
+        "qualified": false,
+        "rubric_id": 4,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 3061 USDm rounds to 3000 USDm at the rubric precision; target is 3000 USDm.",
+        "comparison": {
+          "actual_usd_millions": "3061",
+          "match": true,
+          "metric": "energy",
+          "period": "q4",
+          "rounded_actual_usd_millions": "3000",
+          "rubric_precision_step_usd_millions": "1000",
+          "rubric_target_usd_millions": "3000"
+        },
+        "data_source_type": "company_originated_content",
+        "must_have": true,
+        "qualified": true,
+        "rubric_id": 5,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 2848 USDm rounds to 2800.0 USDm at the rubric precision; target is 2800.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "2848",
+          "match": true,
+          "metric": "services_other",
+          "period": "q4",
+          "rounded_actual_usd_millions": "2800.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "2800.0"
+        },
+        "data_source_type": "company_originated_content",
+        "must_have": true,
+        "qualified": true,
+        "rubric_id": 6,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 18659 USDm rounds to 18660.00 USDm at the rubric precision; target is 18830.00 USDm.",
+        "comparison": {
+          "actual_usd_millions": "18659",
+          "match": false,
+          "metric": "automotive_sales",
+          "period": "q4",
+          "rounded_actual_usd_millions": "18660.00",
+          "rubric_precision_step_usd_millions": "10.00",
+          "rubric_target_usd_millions": "18830.00"
+        },
+        "data_source_type": "company_originated_content",
+        "must_have": false,
+        "qualified": false,
+        "rubric_id": 7,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 692 USDm rounds to 692 USDm at the rubric precision; target is 692 USDm.",
+        "comparison": {
+          "actual_usd_millions": "692",
+          "match": true,
+          "metric": "regulatory_credits",
+          "period": "q4",
+          "rounded_actual_usd_millions": "692",
+          "rubric_precision_step_usd_millions": "1",
+          "rubric_target_usd_millions": "692"
+        },
+        "data_source_type": "company_originated_content",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 8,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 447 USDm rounds to 447 USDm at the rubric precision; target is 447 USDm.",
+        "comparison": {
+          "actual_usd_millions": "447",
+          "match": true,
+          "metric": "automotive_leasing",
+          "period": "q4",
+          "rounded_actual_usd_millions": "447",
+          "rubric_precision_step_usd_millions": "1",
+          "rubric_target_usd_millions": "447"
+        },
+        "data_source_type": "company_originated_content",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 9,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 72480 USDm rounds to 72500.0 USDm at the rubric precision; target is 72500.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "72480",
+          "match": true,
+          "metric": "automotive_sales",
+          "period": "fy",
+          "rounded_actual_usd_millions": "72500.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "72500.0"
+        },
+        "data_source_type": "sec_filing",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 10,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 2763 USDm rounds to 2800.0 USDm at the rubric precision; target is 2800.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "2763",
+          "match": true,
+          "metric": "regulatory_credits",
+          "period": "fy",
+          "rounded_actual_usd_millions": "2800.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "2800.0"
+        },
+        "data_source_type": "sec_filing",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 11,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 1827 USDm rounds to 1800.0 USDm at the rubric precision; target is 1800.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "1827",
+          "match": true,
+          "metric": "automotive_leasing",
+          "period": "fy",
+          "rounded_actual_usd_millions": "1800.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "1800.0"
+        },
+        "data_source_type": "sec_filing",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 12,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 77070 USDm rounds to 77100.0 USDm at the rubric precision; target is 77100.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "77070",
+          "match": true,
+          "metric": "total_automotive",
+          "period": "fy",
+          "rounded_actual_usd_millions": "77100.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "77100.0"
+        },
+        "data_source_type": "sec_filing",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 13,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 10086 USDm rounds to 10100.0 USDm at the rubric precision; target is 10100.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "10086",
+          "match": true,
+          "metric": "energy",
+          "period": "fy",
+          "rounded_actual_usd_millions": "10100.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "10100.0"
+        },
+        "data_source_type": "sec_filing",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 14,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 10534 USDm rounds to 10500.0 USDm at the rubric precision; target is 10500.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "10534",
+          "match": true,
+          "metric": "services_other",
+          "period": "fy",
+          "rounded_actual_usd_millions": "10500.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "10500.0"
+        },
+        "data_source_type": "sec_filing",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 15,
+        "rubric_type": "Factual Data Extraction"
+      },
+      {
+        "audit_reason": "Source-derived response value 97690 USDm rounds to 97700.0 USDm at the rubric precision; target is 97700.0 USDm.",
+        "comparison": {
+          "actual_usd_millions": "97690",
+          "match": true,
+          "metric": "total_revenue",
+          "period": "fy",
+          "rounded_actual_usd_millions": "97700.0",
+          "rubric_precision_step_usd_millions": "100.0",
+          "rubric_target_usd_millions": "97700.0"
+        },
+        "data_source_type": "sec_filing",
+        "must_have": false,
+        "qualified": true,
+        "rubric_id": 16,
+        "rubric_type": "Factual Data Extraction"
+      }
+    ],
+    "num_qualified": 14,
+    "num_rubrics": 16,
+    "query_id": "097d482fc529c5f0"
+  }
+]

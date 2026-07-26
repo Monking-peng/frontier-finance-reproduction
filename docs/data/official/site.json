@@ -1,0 +1,93 @@
+{
+  "overview": {
+    "benchmark_name": "Frontier Finance (v3.1)",
+    "public_split_size": 220,
+    "criteria_totals": {
+      "total_criteria": 11543,
+      "essential_pct": 64.9,
+      "mean_criteria_per_query": 52.5
+    },
+    "difficulty_distribution": [
+      {
+        "name": "hard",
+        "count": 74
+      },
+      {
+        "name": "easy",
+        "count": 73
+      },
+      {
+        "name": "medium",
+        "count": 73
+      }
+    ],
+    "use_case_distribution": [
+      {
+        "name": "financial_data_and_modeling",
+        "count": 70
+      },
+      {
+        "name": "sector_industry_and_macro",
+        "count": 38
+      },
+      {
+        "name": "earnings_and_events",
+        "count": 36
+      },
+      {
+        "name": "company_research",
+        "count": 32
+      },
+      {
+        "name": "coverage_and_catalyst_monitoring",
+        "count": 27
+      },
+      {
+        "name": "screening_and_discovery",
+        "count": 17
+      }
+    ],
+    "capability_distribution": [
+      {
+        "name": "qualitative_synthesis",
+        "count": 99
+      },
+      {
+        "name": "exhaustive_retrieval/temporal",
+        "count": 71
+      },
+      {
+        "name": "numerical_reasoning",
+        "count": 59
+      },
+      {
+        "name": "multi_hop_workflows",
+        "count": 53
+      },
+      {
+        "name": "exhaustive_retrieval/cross_entity",
+        "count": 44
+      },
+      {
+        "name": "simple_retrieval/fact_lookup",
+        "count": 32
+      },
+      {
+        "name": "exhaustive_retrieval/thematic",
+        "count": 32
+      },
+      {
+        "name": "causal_reasoning",
+        "count": 14
+      },
+      {
+        "name": "simple_retrieval/non_disclosure",
+        "count": 5
+      },
+      {
+        "name": "simple_retrieval/claim_verification",
+        "count": 1
+      }
+    ]
+  }
+}

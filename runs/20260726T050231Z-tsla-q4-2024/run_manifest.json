@@ -1,0 +1,63 @@
+{
+    "command":  "ffrepro demo --offline-source-dir runs\\20260726T050037Z-tsla-q4-2024\\sources",
+    "completed_at":  "2026-07-26T05:02:32.472+00:00",
+    "environment":  {
+                        "api_keys_present":  {
+                                                 "ANTHROPIC_API_KEY":  false,
+                                                 "GEMINI_API_KEY":  false,
+                                                 "OPENAI_API_KEY":  false
+                                             },
+                        "platform":  "Windows-11-10.0.22631-SP0",
+                        "python":  "3.13.14 (main, Jul 18 2026, 17:10:39) [MSC v.1944 64 bit (AMD64)]"
+                    },
+    "git":  {
+                "branch":  "main",
+                "commit":  "unavailable",
+                "status_porcelain":  "?? .env.example\n?? .gitignore\n?? .python-version\n?? LICENSE\n?? NOTICE.md\n?? README.md\n?? configs/\n?? data/\n?? outputs/\n?? pyproject.toml\n?? runs/\n?? src/\n?? tests/\n?? uv.lock"
+            },
+    "inputs":  {
+                   "config":  {
+                                  "path":  "configs/demo.tsla-q4-2024.json",
+                                  "sha256":  "b736c6df619505d45f48a3c69ae30bd2e542fd03efcf9f992c8b53e75e27f007"
+                              },
+                   "rubric_fixture":  {
+                                          "path":  "data/demo/frontier_finance_tsla_q4_2024.jsonl",
+                                          "sha256":  "8a0c1692a7163308eed4b727e07f8d42ab3df4f3761854f9e6353adc6efe1e44"
+                                      }
+               },
+    "outputs":  {
+                    "answer":  "answer.md",
+                    "metrics":  "metrics.json",
+                    "per_item":  "per_item.json",
+                    "responses":  "system_summaries.json",
+                    "rubric_audit":  "rubric_audit.json",
+                    "trace":  "trace.jsonl"
+                },
+    "project_version":  "0.1.0",
+    "query_date":  "2025-02-04",
+    "query_id":  "097d482fc529c5f0",
+    "result":  {
+                   "confirmed_scoring_anomalies":  2,
+                   "must_have_rate":  0.8,
+                   "qualification_rate":  0.875,
+                   "qualified":  14,
+                   "query":  "Provide TSLA\u0027s revenue breakdown for the most recent quarter.",
+                   "rubrics":  16
+               },
+    "run_id":  "20260726T050231Z-tsla-q4-2024",
+    "schema_version":  1,
+    "scoring":  {
+                    "mode":  "deterministic-audit-v1",
+                    "note":  "The official Grader/Grader majority-vote and MetricsReport code run, but the judge is a transparent deterministic checker because no provider API keys were present.",
+                    "official_panel_run":  false,
+                    "officially_comparable":  false
+                },
+    "source_manifest":  "source_manifest.json",
+    "started_at":  "2026-07-26T05:02:31.915+00:00",
+    "status":  "completed_with_findings",
+    "upstreams":  {
+                      "dataset_commit":  "21da0514a15c51774ff836c46f290681c0ad91ee",
+                      "finance_agent_v2_commit":  "e2a0446969a9b77c7613012744c15affe14a88d0",
+                      "official_grader_commit":  "7d2d9c2a54816e94fb9e2e6a1cb033cc9dfcb589"
+                  }
+}

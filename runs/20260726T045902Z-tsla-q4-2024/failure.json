@@ -1,0 +1,6 @@
+{
+  "category": "environment_anomaly",
+  "exception_type": "HTTPError",
+  "message": "HTTP Error 403: Forbidden",
+  "timestamp": "2026-07-26T04:59:05.828+00:00"
+}

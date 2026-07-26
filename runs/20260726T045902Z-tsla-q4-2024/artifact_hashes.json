@@ -1,0 +1,30 @@
+{
+    "algorithm":  "sha256",
+    "artifacts":  [
+                      {
+                          "bytes":  13,
+                          "path":  "command.txt",
+                          "sha256":  "96a97385c2f19b73cb81f5fb8fa9093c5c14d04b3e61e0e6ccf3019a7f3e7e15"
+                      },
+                      {
+                          "bytes":  163,
+                          "path":  "failure.json",
+                          "sha256":  "8b9eaf4bcd59904c10fbc688ffce03ac661c3cdd60938b3595bb0f40894e69a0"
+                      },
+                      {
+                          "bytes":  2776,
+                          "path":  "run_manifest.json",
+                          "sha256":  "a3902b6462b102ff0a638a870bbcab453f3316b33282e94678d919cb7058a8c0"
+                      },
+                      {
+                          "bytes":  622,
+                          "path":  "trace.jsonl",
+                          "sha256":  "5a656765be5308722b46ccd965cfa1fddec2f437ae1e3331d920b7f38f28414b"
+                      }
+                  ],
+    "generated_at":  "2026-07-26T04:59:05.834+00:00",
+    "public_snapshot":  {
+                            "source_commit":  "8230bf1ae4b894a2be20d31fe45e8f633646aaa9",
+                            "change":  "portable command-path redaction; hashes recomputed for shipped artifacts"
+                        }
+}

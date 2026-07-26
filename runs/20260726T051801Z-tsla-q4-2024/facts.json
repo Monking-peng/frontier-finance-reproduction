@@ -1,0 +1,29 @@
+{
+  "fy": {
+    "automotive_leasing": "1827",
+    "automotive_sales": "72480",
+    "energy": "10086",
+    "regulatory_credits": "2763",
+    "services_other": "10534",
+    "total_automotive": "77070",
+    "total_revenue": "97690"
+  },
+  "nine_month": {
+    "automotive_leasing": "1380",
+    "automotive_sales": "53821",
+    "energy": "7025",
+    "regulatory_credits": "2071",
+    "services_other": "7686",
+    "total_automotive": "57272",
+    "total_revenue": "71983"
+  },
+  "q4": {
+    "automotive_leasing": "447",
+    "automotive_sales": "18659",
+    "energy": "3061",
+    "regulatory_credits": "692",
+    "services_other": "2848",
+    "total_automotive": "19798",
+    "total_revenue": "25707"
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "at": "2026-07-26T04:59:05Z",
+    "category": "environment_anomaly",
+    "status": "recorded",
+    "summary": "SEC returned HTTP 403 because the automated client User-Agent lacked contact syntax."
+  },
+  {
+    "at": "2026-07-26T05:01:04Z",
+    "category": "agent_failure",
+    "status": "fixed",
+    "summary": "The first inline-XBRL parser treated an empty numeric node as a fact."
+  },
+  {
+    "at": "2026-07-26T05:02:14Z",
+    "category": "agent_failure",
+    "status": "fixed",
+    "summary": "A nonnumeric XBRL value contained digits in nested style attributes; visible text is now checked."
+  },
+  {
+    "at": "2026-07-26T05:02:31Z",
+    "category": "completed_with_findings",
+    "status": "passed",
+    "summary": "SEC inputs reconciled, 16 rubrics scored, two reference-value anomalies preserved as failures."
+  }
+]
+

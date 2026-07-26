@@ -1,0 +1,52 @@
+{
+  "calculations": [
+    {
+      "fy_2024": "72480",
+      "metric": "automotive_sales",
+      "nine_month_2024": "53821",
+      "q4_2024": "18659"
+    },
+    {
+      "fy_2024": "2763",
+      "metric": "regulatory_credits",
+      "nine_month_2024": "2071",
+      "q4_2024": "692"
+    },
+    {
+      "fy_2024": "1827",
+      "metric": "automotive_leasing",
+      "nine_month_2024": "1380",
+      "q4_2024": "447"
+    },
+    {
+      "fy_2024": "77070",
+      "metric": "total_automotive",
+      "nine_month_2024": "57272",
+      "q4_2024": "19798"
+    },
+    {
+      "fy_2024": "10086",
+      "metric": "energy",
+      "nine_month_2024": "7025",
+      "q4_2024": "3061"
+    },
+    {
+      "fy_2024": "10534",
+      "metric": "services_other",
+      "nine_month_2024": "7686",
+      "q4_2024": "2848"
+    },
+    {
+      "fy_2024": "97690",
+      "metric": "total_revenue",
+      "nine_month_2024": "71983",
+      "q4_2024": "25707"
+    }
+  ],
+  "formula": "Q4 2024 = FY 2024 - nine months ended 2024-09-30",
+  "reconciliations": [
+    "automotive components equal total automotive revenue",
+    "total automotive + energy + services equal total revenue"
+  ],
+  "unit": "USD millions"
+}

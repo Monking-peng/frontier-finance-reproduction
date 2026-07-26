@@ -1,0 +1,75 @@
+{
+    "algorithm":  "sha256",
+    "artifacts":  [
+                      {
+                          "bytes":  1307,
+                          "path":  "answer.md",
+                          "sha256":  "62f3c33341264bb47fc94811e32db6fd3c2e3fa94a40dde76dc486b9fda8ff7f"
+                      },
+                      {
+                          "bytes":  1236,
+                          "path":  "calculations.json",
+                          "sha256":  "24aa549b7cd1ecca5a7cba28558c74b2a82e6d93951c116ea055865563672e47"
+                      },
+                      {
+                          "bytes":  181,
+                          "path":  "command.txt",
+                          "sha256":  "eff9f7c87458e477d2b6925ee4c3f2a8a7c265b967da1f8eee20e0d858139364"
+                      },
+                      {
+                          "bytes":  701,
+                          "path":  "facts.json",
+                          "sha256":  "1d7126e6f2ffccfd77124648c1874c5a240b6337adfca4a9b42ab5f01ff34c58"
+                      },
+                      {
+                          "bytes":  1526,
+                          "path":  "metrics.json",
+                          "sha256":  "70263ac911f51d2c57eb5ee2985aa33de749267fe965852d7eb3eb903fbd791c"
+                      },
+                      {
+                          "bytes":  10260,
+                          "path":  "per_item.json",
+                          "sha256":  "6f43043b1898099bd57c411c355bbee3e2c47d0120320c5b14c9756575594019"
+                      },
+                      {
+                          "bytes":  1196,
+                          "path":  "rubric_audit.json",
+                          "sha256":  "d3a6be605cf180fd047a8d63948e10f903ce249741a098a75d299329941b3ffb"
+                      },
+                      {
+                          "bytes":  3206,
+                          "path":  "run_manifest.json",
+                          "sha256":  "bdcf3d04470953f9e97a58c1377195a0dcf0be291668bb6d5683c41af0534616"
+                      },
+                      {
+                          "bytes":  1037,
+                          "path":  "source_manifest.json",
+                          "sha256":  "1b4da5da913146ebece6ccb590a304db8bdd9c047cd5eacd58cd3bd55b7a3684"
+                      },
+                      {
+                          "bytes":  2596459,
+                          "path":  "sources/tsla-2024-10k.htm",
+                          "sha256":  "2a5dc10024afd96cf71f154c949759123c1da05715fb574866eaba6e1ec3bb18"
+                      },
+                      {
+                          "bytes":  1502670,
+                          "path":  "sources/tsla-2024-q3-10q.htm",
+                          "sha256":  "7e36bd2c4fbe93dd0ab5f0f98199fd7253ff4869b47d63738cca1f0d5d2f92fb"
+                      },
+                      {
+                          "bytes":  1386,
+                          "path":  "system_summaries.json",
+                          "sha256":  "19718947726fd37e1d997b65ed972ec1192f64561cff4739d923197f44d5ee9a"
+                      },
+                      {
+                          "bytes":  1966,
+                          "path":  "trace.jsonl",
+                          "sha256":  "298e706703095336deb357c56ec84cb5d5b4e709304379aab8cf14cefa10293a"
+                      }
+                  ],
+    "generated_at":  "2026-07-26T05:18:01.721+00:00",
+    "public_snapshot":  {
+                            "source_commit":  "8230bf1ae4b894a2be20d31fe45e8f633646aaa9",
+                            "change":  "portable command-path redaction; hashes recomputed for shipped artifacts"
+                        }
+}

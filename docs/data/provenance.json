@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-07-26T05:00:00Z",
+  "official_page_updated_at": "2026-07-21",
+  "official_assets": [
+    {
+      "path": "official/system-performance.json",
+      "url": "https://research.samaya.ai/bundles/system-performance.json",
+      "sha256": "6002e27982aa2da5f4e89edc7068b92c2b17e6e25f57b2654359709e93b251c0"
+    },
+    {
+      "path": "official/run-breakdowns.json",
+      "url": "https://research.samaya.ai/bundles/run-breakdowns.json",
+      "sha256": "6b653318b2e368a9ea7cb4d84cde72cb7afe0173b72dba2ad914763d28db9959"
+    },
+    {
+      "path": "official/site.json",
+      "url": "https://research.samaya.ai/bundles/site.json",
+      "sha256": "10550bbe71c4a4272464618056767c54ece5d3c2787c2394e1317d46b56169c2"
+    }
+  ],
+  "demo_run": {
+    "run_id": "20260726T051801Z-tsla-q4-2024",
+    "code_commit": "76612b92cef57507f1af7ca6854623dc7ce278b5",
+    "scoring_mode": "deterministic-audit-v1",
+    "officially_comparable": false,
+    "artifact_hash_manifest_sha256": "00340c3fdbda51731a38d46cea46f0162978595c0a49fe39722760eeb7985de0"
+  },
+  "notes": [
+    "These are read-only captures of public factual benchmark bundles used to reproduce the charts.",
+    "Samaya's page, not this repository, is authoritative for later updates."
+  ]
+}

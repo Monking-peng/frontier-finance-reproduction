@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Samaya FrontierFinance 独立复现中文研究报告。" />
+    <title>研究报告 · FrontierFinance 可审计复现</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#report">跳到报告</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="返回项目首页">
+        <span class="wordmark-mark" aria-hidden="true">FF</span>
+        <span>Independent Reproduction</span>
+      </a>
+      <nav aria-label="报告导航">
+        <a href="index.html#demo">实跑 Demo</a>
+        <a href="index.html#leaderboard">官方榜单</a>
+        <a href="research/report-zh.md">Markdown 原文</a>
+        <a href="https://github.com/Monking-peng/frontier-finance-reproduction">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="report-page" id="report">
+      <header class="report-hero">
+        <p class="kicker">RESEARCH MEMO / 2026-07-26</p>
+        <h1>Samaya FrontierFinance<br />系统性能基准复现</h1>
+        <p>
+          一份把官方事实、实际运行和个人判断分开的中文研究备忘录。结论先行，不把未知项
+          写成已实现。
+        </p>
+        <dl class="report-facts">
+          <div><dt>官方规模</dt><dd>220 queries / 11,543 rubrics</dd></div>
+          <div><dt>实跑状态</dt><dd>1 条关键链 completed</dd></div>
+          <div><dt>本地分数</dt><dd>87.5% · non-official</dd></div>
+          <div><dt>确认异常</dt><dd>2 rubric values</dd></div>
+        </dl>
+      </header>
+
+      <article class="report-article">
+        <section>
+          <span class="report-number">01</span>
+          <h2>结论先行</h2>
+          <p>
+            Samaya FrontierFinance 不是传统问答题库，而是一套用 11,543 条专家原子标准
+            评估 220 个开放式投资研究任务的端到端系统基准。最难复刻的不是 grader——
+            grader 和 rubric 都已公开——而是长程检索 Agent、时间截点控制、来源覆盖、
+            运行成本与裁判稳定性。
+          </p>
+          <p>
+            公开信息足以复刻输入输出契约、Finance Agent v2 工具链、三裁判多数票、指标、
+            失败语义、结果文件和展示页；不足以复刻 Samaya 私有模型、检索索引、路由和缓存，
+            也不足以声称获得官方榜单认证。
+          </p>
+        </section>
+
+        <section>
+          <span class="report-number">02</span>
+          <h2>这套系统怎样工作</h2>
+          <p>
+            每条记录提供查询、query date、工作流、能力标签和一组 must-have / nice-to-have
+            rubric。没有参考答案和随附文档；回答系统必须自行研究公开网页、SEC、公司材料、
+            市场数据和新闻。公开基线分为厂商 Web Search、六工具 Finance Agent v2 和 Samaya
+            私有多模型检索系统。
+          </p>
+          <p>
+            回答按 <code>{query_id, system_summary}</code> 保存。Sonnet 4.6、Gemini 3.1 Pro、
+            GPT 5.4 对每条 rubric 独立判断，再逐条多数票。主分是逐查询 rubric 通过率的宏平均；
+            无回答按零分，单个裁判失败使用存活票，三个都失败则从评分分母排除。
+          </p>
+        </section>
+
+        <aside class="report-callout">
+          <strong>核心判断</strong>
+          <p>
+            FrontierFinance 更像“系统覆盖率 benchmark”，不是孤立模型知识测试。Harness、
+            检索与时间边界跟模型本身同样重要。
+          </p>
+        </aside>
+
+        <section>
+          <span class="report-number">03</span>
+          <h2>首条真实 Demo 证明了什么</h2>
+          <p>
+            项目从 Tesla 查询日前的 2024 10-K 和 Q3 10-Q 内联 XBRL取数，用 FY 减 9M
+            推导 Q4，完成两层勾稽、生成回答，再调用官方 <code>Grader</code> 和
+            <code>MetricsReport</code>。由于机器没有三家 API key，裁判是透明确定性审计器，
+            所以 87.5% 只证明本地端到端链路可运行，不能与官网 50.8% 比较。
+          </p>
+          <p>
+            运行保留回答、原始来源哈希、事实、公式、轨迹、官方格式结果、异常分类和全部产物
+            SHA-256。首次成功前的 HTTP 403 与两次解析器失败也分别留档。
+          </p>
+        </section>
+
+        <section>
+          <span class="report-number">04</span>
+          <h2>比跑分更重要的两个发现</h2>
+          <p>
+            公开 TSLA rubric 7 把 Q3 automotive sales 的 18,831m 写成 Q4；SEC 推导的
+            Q4 是 18,659m。rubric 4 写 Q4 total automotive revenue 为 19.7bn，实际
+            19,798m 按官方精度规则应舍入为 19.8bn。本项目保留 SEC 数值、仍按公开 rubric
+            判失败，并把两项记为评分异常。
+          </p>
+          <p>
+            官网分项 bundle 与固定 HF 数据文件也有两条类别映射差异：Qualitative 1,040
+            vs 1,039；Analysis 559 vs 558；Forward-Looking 812 vs 814。总数不变，但公开
+            资产没有版本字段说明差异来源。
+          </p>
+        </section>
+
+        <section>
+          <span class="report-number">05</span>
+          <h2>对官方结果的客观解释</h2>
+          <p>
+            截至 2026-07-21，Samaya System 为 50.8%，Fable 5 + Finance Agent v2 为
+            49.2%，GPT 5.6 Sol + Finance Agent v2 为 46.8%。同一模型换 harness 会显著
+            改变质量、成本与延迟，因此它不是纯模型排行榜。
+          </p>
+          <p>
+            官网成本只计主 Agent 模型，不含搜索、数据索引和 grader；延迟只给均值。官方也
+            没发布逐题回答、轨迹和裁判原始理由，所以外部能验证公开代码与聚合口径，不能重新
+            审计官方每一个答案。
+          </p>
+        </section>
+
+        <section>
+          <span class="report-number">06</span>
+          <h2>个人判断与下一步</h2>
+          <p>
+            Criteria-Eval 的价值是直接惩罚遗漏，适合金融研究；代价是 rubric 自己成为新的
+            模型，会带入专家选择、冗余、数值错误与版本漂移。可信复现必须让“评分标准异常”
+            成为一等故障，而不是把所有失分都归咎于模型。
+          </p>
+          <p>
+            下一阶段先补逐题 query-date adapter、六类分层小样和完整 ATIF 成本轨迹；只有拿到
+            三家裁判 key、冻结模型与价格表并跑完 220 条后，才讨论官方可比结果。公开材料没有
+            第三方榜单提交入口，需向 Samaya 单独确认。
+          </p>
+        </section>
+      </article>
+
+      <nav class="report-links" aria-label="研究附件">
+        <a href="research/benchmark-map.md">Benchmark 全貌</a>
+        <a href="research/evidence-register.md">证据登记表</a>
+        <a href="research/findings.md">实证发现</a>
+        <a href="research/implementation-plan.md">实施计划</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <p>Independent study · Facts captured 2026-07-26 · No official endorsement claimed.</p>
+      <p><a href="index.html">返回项目首页</a></p>
+    </footer>
+  </body>
+</html>
