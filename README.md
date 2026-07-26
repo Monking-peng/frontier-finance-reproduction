@@ -10,8 +10,9 @@ Samaya AI 的 FrontierFinance system-performance benchmark。项目不隶属于 
 - [中文研究报告](https://monking-peng.github.io/frontier-finance-reproduction/report.html)
 - [GitHub 仓库](https://github.com/Monking-peng/frontier-finance-reproduction)
 
-公开仓库是从开发仓库提交 `8230bf1ae4b894a2be20d31fe45e8f633646aaa9` 生成的
-白名单快照。本机绝对路径、原始 SEC 大文件、缓存、凭证和开发历史均未发布；公开
+公开仓库当前对应开发仓库提交 `44b8152cb43b0b648a66e9b0f911acf9d666f2f6`；初始白名单
+快照来自 `8230bf1ae4b894a2be20d31fe45e8f633646aaa9`。本机绝对路径、原始 SEC 大文件、
+缓存、凭证和开发历史均未发布；公开
 运行记录中的命令路径已做等价脱敏，相关产物哈希已重新计算。
 
 ## 当前结论

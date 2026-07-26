@@ -1,9 +1,10 @@
 {
     "schema_version":  1,
-    "source_workspace_commit":  "8230bf1ae4b894a2be20d31fe45e8f633646aaa9",
+    "source_workspace_commit":  "44b8152cb43b0b648a66e9b0f911acf9d666f2f6",
+    "initial_allowlisted_snapshot_commit":  "8230bf1ae4b894a2be20d31fe45e8f633646aaa9",
     "generated_at":  "2026-07-26",
     "files":  96,
-    "bytes":  394337,
+    "bytes":  397050,
     "redactions":  [
                        "absolute local executable paths",
                        "original SEC filing bytes",
@@ -53,13 +54,13 @@
                       },
                       {
                           "path":  "PUBLICATION.md",
-                          "bytes":  1310,
-                          "sha256":  "95e67f6b62491900a37a10b439fa61becd4ee9d0c8ec6a96199465bf7bfb4811"
+                          "bytes":  1400,
+                          "sha256":  "f577f30ae46a3b851100cc34564ca6f5330496bfb3d25579558a680450169f2e"
                       },
                       {
                           "path":  "README.md",
-                          "bytes":  3951,
-                          "sha256":  "fb2a4e8a591f47999bec9b42b88f46d11bc4a4e533b54e7325c11add8fdb2eb8"
+                          "bytes":  4006,
+                          "sha256":  "3fa9ff00f5de948e58a639a9a3778d6c4ce6c659c4b39c8eba189e0564a11784"
                       },
                       {
                           "path":  "configs/demo.tsla-q4-2024.json",
@@ -153,13 +154,13 @@
                       },
                       {
                           "path":  "docs/index.html",
-                          "bytes":  11800,
-                          "sha256":  "9ae6f772bb22e40da582537b1a4813654aae76f3eee13aee4ebe25b434a04de3"
+                          "bytes":  11958,
+                          "sha256":  "27b54c501fbbaeec7cfaf34c17dd583ce99b58a2114575cb533cf0b5e8fcd924"
                       },
                       {
                           "path":  "docs/report.html",
-                          "bytes":  7666,
-                          "sha256":  "098ece306f73682479889fa6151069442faad1ee4eb1b847132976f4fd896fc5"
+                          "bytes":  7740,
+                          "sha256":  "04b3f6ce13a2d4be88382e0ce69298964d756c371dfea4b1d21949e8fd30ee09"
                       },
                       {
                           "path":  "docs/research/benchmark-map.md",
@@ -193,8 +194,8 @@
                       },
                       {
                           "path":  "docs/styles.css",
-                          "bytes":  20115,
-                          "sha256":  "0485c7d774f5632681b7ff82881606b670583c283c415be8b3735a748e016c74"
+                          "bytes":  22451,
+                          "sha256":  "8d1e404db277daa4e708f727608f2edac76c086d88e36beb5d3553087328e7cc"
                       },
                       {
                           "path":  "outputs/.gitkeep",
