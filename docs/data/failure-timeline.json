@@ -3,25 +3,24 @@
     "at": "2026-07-26T04:59:05Z",
     "category": "environment_anomaly",
     "status": "recorded",
-    "summary": "SEC returned HTTP 403 because the automated client User-Agent lacked contact syntax."
+    "summary": "第一次下载 SEC 财报时返回 HTTP 403。原因是自动化客户端没有提供符合要求的联系人信息；补充 User-Agent 后下载成功。"
   },
   {
     "at": "2026-07-26T05:01:04Z",
     "category": "agent_failure",
     "status": "fixed",
-    "summary": "The first inline-XBRL parser treated an empty numeric node as a fact."
+    "summary": "初版 XBRL 解析器把空数值节点当成财务数据，导致程序中止；修复后会跳过空节点。"
   },
   {
     "at": "2026-07-26T05:02:14Z",
     "category": "agent_failure",
     "status": "fixed",
-    "summary": "A nonnumeric XBRL value contained digits in nested style attributes; visible text is now checked."
+    "summary": "一个内容为“no”的节点因为 HTML 属性里带数字而被误判；修复后只检查用户真正看到的文本。"
   },
   {
     "at": "2026-07-26T05:02:31Z",
     "category": "completed_with_findings",
     "status": "passed",
-    "summary": "SEC inputs reconciled, 16 rubrics scored, two reference-value anomalies preserved as failures."
+    "summary": "修复后完整跑通：两份 SEC 财报完成勾稽，16 条标准完成评分，两处评分数据冲突按失败保留。"
   }
 ]
-

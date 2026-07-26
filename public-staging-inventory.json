@@ -1,10 +1,10 @@
 {
     "schema_version":  1,
-    "source_workspace_commit":  "44b8152cb43b0b648a66e9b0f911acf9d666f2f6",
+    "source_workspace_commit":  "f29a9c6e7eaa3833e97f89f99064e841e8350330",
     "initial_allowlisted_snapshot_commit":  "8230bf1ae4b894a2be20d31fe45e8f633646aaa9",
     "generated_at":  "2026-07-26",
     "files":  96,
-    "bytes":  397050,
+    "bytes":  383598,
     "redactions":  [
                        "absolute local executable paths",
                        "original SEC filing bytes",
@@ -55,12 +55,12 @@
                       {
                           "path":  "PUBLICATION.md",
                           "bytes":  1400,
-                          "sha256":  "f577f30ae46a3b851100cc34564ca6f5330496bfb3d25579558a680450169f2e"
+                          "sha256":  "ba102fccc29c0f075d4dfc4e4874a62bcf734006dd106e251ed81d298fd83c62"
                       },
                       {
                           "path":  "README.md",
                           "bytes":  4006,
-                          "sha256":  "3fa9ff00f5de948e58a639a9a3778d6c4ce6c659c4b39c8eba189e0564a11784"
+                          "sha256":  "982c37ba3207c315066c7399055610c46029c7455691849ed42a917c9a8ddb7d"
                       },
                       {
                           "path":  "configs/demo.tsla-q4-2024.json",
@@ -89,8 +89,8 @@
                       },
                       {
                           "path":  "docs/app.js",
-                          "bytes":  10487,
-                          "sha256":  "04aeb9067678942b5c0e91d8a7cbe5a96ce23fbdb0e0eaee744260e4c4a5748b"
+                          "bytes":  3097,
+                          "sha256":  "6963b80f4d82e9ec00ea9ea48ad173a99b03aa8a604f7f35f996f0b3b6837b40"
                       },
                       {
                           "path":  "docs/data/dataset-profile.json",
@@ -129,8 +129,8 @@
                       },
                       {
                           "path":  "docs/data/failure-timeline.json",
-                          "bytes":  836,
-                          "sha256":  "82e6d58a05aff3dbebb9d71551e925a920a8966341fa33979ae3a88c4f424b46"
+                          "bytes":  1007,
+                          "sha256":  "529402ca8d4c9fc576cae5588bcc2bb5395e589448114a7f92cf64aa19e54e11"
                       },
                       {
                           "path":  "docs/data/official/run-breakdowns.json",
@@ -154,13 +154,13 @@
                       },
                       {
                           "path":  "docs/index.html",
-                          "bytes":  11958,
-                          "sha256":  "27b54c501fbbaeec7cfaf34c17dd583ce99b58a2114575cb533cf0b5e8fcd924"
+                          "bytes":  9504,
+                          "sha256":  "7cfc8c028b0aa2ad2c7edd41e9f4acf3febb5e7b5b40c3354b1294816afa3a1d"
                       },
                       {
                           "path":  "docs/report.html",
-                          "bytes":  7740,
-                          "sha256":  "04b3f6ce13a2d4be88382e0ce69298964d756c371dfea4b1d21949e8fd30ee09"
+                          "bytes":  7788,
+                          "sha256":  "c86841cc6bb96e759138eb8f411217940778779cd7c1c06e97618483ba63ac9e"
                       },
                       {
                           "path":  "docs/research/benchmark-map.md",
@@ -194,8 +194,8 @@
                       },
                       {
                           "path":  "docs/styles.css",
-                          "bytes":  22451,
-                          "sha256":  "8d1e404db277daa4e708f727608f2edac76c086d88e36beb5d3553087328e7cc"
+                          "bytes":  18624,
+                          "sha256":  "a2408a70e949ca0f10421c0eae7c2b83e10c2e938eb552859a3ffbd89520711a"
                       },
                       {
                           "path":  "outputs/.gitkeep",

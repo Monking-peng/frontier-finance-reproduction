@@ -3,7 +3,7 @@
 This repository is a public, allowlisted snapshot of the independent
 FrontierFinance reproduction workspace.
 
-- Current source workspace commit: `44b8152cb43b0b648a66e9b0f911acf9d666f2f6`
+- Current source workspace commit: `f29a9c6e7eaa3833e97f89f99064e841e8350330`
 - Initial allowlisted snapshot commit: `8230bf1ae4b894a2be20d31fe45e8f633646aaa9`
 - Demo code commit: `76612b92cef57507f1af7ca6854623dc7ce278b5`
 - Publication date: `2026-07-26`

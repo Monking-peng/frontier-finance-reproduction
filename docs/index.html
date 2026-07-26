@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Samaya FrontierFinance benchmark 的独立、可运行、可审计复现研究。"
+      content="FrontierFinance benchmark 独立复刻项目：完整评测流程、真实测试 Demo、问题修复与可审计证据。"
     />
-    <title>FrontierFinance · 可审计复现</title>
+    <title>FrontierFinance Benchmark 复刻项目</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
@@ -19,10 +19,10 @@
         <span>Independent Reproduction</span>
       </a>
       <nav aria-label="主导航">
-        <a href="#map">系统图</a>
-        <a href="#leaderboard">官方榜单</a>
-        <a href="#demo">实跑 Demo</a>
-        <a href="report.html">研究报告</a>
+        <a href="#map">复刻流程</a>
+        <a href="#demo">真实实验</a>
+        <a href="#problems">遇到的问题</a>
+        <a href="report.html">完整报告</a>
         <a href="https://github.com/Monking-peng/frontier-finance-reproduction">GitHub</a>
       </nav>
     </header>
@@ -30,153 +30,126 @@
     <main id="main">
       <section class="hero section-grid" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="kicker">SYSTEM PERFORMANCE / TAKEN APART</p>
+          <p class="kicker">BENCHMARK REPRODUCTION / INTERVIEW PROJECT</p>
           <h1 id="hero-title">
-            FrontierFinance，<br />
-            <em>拆到每一条证据。</em>
+            FrontierFinance<br />
+            <em>Benchmark <span class="heading-phrase">复刻项目</span></em>
           </h1>
           <p class="hero-lede">
-            对 Samaya 220 条开放式金融研究任务的独立复现。先打通真实数据、Agent、评分和
-            哈希链，再谈分数。
+            我复刻了问题进入系统、Agent 查资料、生成答案、逐条评分、保存结果和追踪证据的
+            完整流程，并跑通了一条 Tesla SEC 真实测试实验。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#demo">查看已跑通链路</a>
-            <a class="button button-secondary" href="report.html">阅读系统全貌</a>
-            <a class="button button-secondary" href="https://github.com/Monking-peng/frontier-finance-reproduction">查看源码与数据</a>
+            <a class="button button-primary" href="#demo">看真实测试实验</a>
+            <a class="button button-secondary" href="report.html">看完整研究报告</a>
           </div>
         </div>
 
         <aside class="status-ledger" aria-label="当前项目状态">
           <div class="ledger-stamp">
             <span class="stamp-dot" aria-hidden="true"></span>
-            REAL RUN · NOT OFFICIAL SCORE
+            真实运行 · 本地透明审计
           </div>
           <dl>
-            <div><dt>官方数据</dt><dd>220 queries</dd></div>
-            <div><dt>专家标准</dt><dd>11,543 rubrics</dd></div>
-            <div><dt>本地关键链</dt><dd>1 / 1 completed</dd></div>
-            <div><dt>官方可比</dt><dd class="text-alert">No — judge keys absent</dd></div>
+            <div><dt>公开题库</dt><dd>220 道题</dd></div>
+            <div><dt>评分标准</dt><dd>11,543 条</dd></div>
+            <div><dt>复刻范围</dt><dd>完整评测流程</dd></div>
+            <div><dt>真实实验</dt><dd>1 条已完成</dd></div>
           </dl>
           <p>
-            页面中的官方结果来自 2026-07-21 公布的公开 bundle；蓝色 Demo 数据来自本仓库
-            2026-07-26 的实际运行。
+            Demo 本地通过 14/16 条评分标准。由于没有运行官方三家 LLM 裁判，87.5% 只用于
+            验证复刻链路，不能和官网排名比较。
           </p>
         </aside>
       </section>
 
-      <section class="truth-band" aria-label="证据边界">
+      <section class="truth-band" aria-label="项目完成内容">
         <article>
-          <span class="truth-index">01 / OFFICIAL</span>
-          <h2>已公开、可复算</h2>
-          <p>查询、rubric、grader、三裁判多数票、指标口径、Finance Agent v2 与官网聚合结果。</p>
+          <span class="truth-index">01 / 完整流程</span>
+          <h2>复刻评测系统</h2>
+          <p>从读取题目、Agent 研究到官方 Grader 评分和结果保存，整条链路都能运行。</p>
         </article>
         <article>
-          <span class="truth-index">02 / REPRODUCED</span>
-          <h2>已实跑、可追溯</h2>
-          <p>SEC 文件 → XBRL → Q4 推导 → 勾稽 → 回答 → rubric 分数 → manifest 与 SHA-256。</p>
+          <span class="truth-index">02 / 真实实验</span>
+          <h2>处理真实 SEC 数据</h2>
+          <p>下载 Tesla 财报、解析 XBRL、推导季度数据、生成答案并完成逐条评分。</p>
         </article>
         <article>
-          <span class="truth-index">03 / NOT PUBLIC</span>
-          <h2>不能伪装已复刻</h2>
-          <p>Samaya 私有模型、索引、路由、官方逐题轨迹，以及第三方榜单提交流程。</p>
+          <span class="truth-index">03 / 可核对证据</span>
+          <h2>保留来源和错误记录</h2>
+          <p>答案、计算、来源、运行轨迹、失败原因和 SHA-256 都能回到具体文件。</p>
         </article>
       </section>
 
       <section class="section" id="map" aria-labelledby="map-title">
         <div class="section-heading">
-          <p class="kicker">01 / BENCHMARK MAP</p>
-          <h2 id="map-title">数据怎样变成一个榜单点</h2>
-          <p>公开契约是清楚的；真正的差异发生在中间那段长程研究。</p>
+          <p class="kicker">01 / 我复刻了什么</p>
+          <h2 id="map-title">我复刻了 Benchmark 的完整运行流程</h2>
+          <p>从一道题进入系统开始，到 Agent 找资料、生成答案、逐条评分和保存结果。</p>
         </div>
 
         <div class="pipeline" role="list" aria-label="FrontierFinance 处理链">
           <article role="listitem">
             <span class="node-number">A</span>
-            <h3>Query + date</h3>
-            <p>自然语言问题、信息截点、工作流与能力标签。</p>
-            <small>PUBLIC JSONL</small>
+            <h3>读取题目</h3>
+            <p>从公开 JSONL 读取问题、信息截止日期和评分标准。</p>
+            <small>输入</small>
           </article>
           <span class="pipeline-arrow" aria-hidden="true">→</span>
           <article role="listitem" class="node-agent">
             <span class="node-number">B</span>
-            <h3>Agent harness</h3>
-            <p>Web Search / Finance Agent v2 / Samaya private system。</p>
-            <small>QUALITY LIVES HERE</small>
+            <h3>Agent 查资料</h3>
+            <p>使用搜索、SEC、网页解析、市场数据和计算工具完成研究。</p>
+            <small>研究</small>
           </article>
           <span class="pipeline-arrow" aria-hidden="true">→</span>
           <article role="listitem">
             <span class="node-number">C</span>
-            <h3>Public evidence</h3>
-            <p>SEC、公司材料、市场数据、新闻、专业知识。</p>
-            <small>TIME-CUTOFF REQUIRED</small>
+            <h3>整理可靠来源</h3>
+            <p>只使用查询日期前的 SEC、公司材料和公开市场数据。</p>
+            <small>证据</small>
           </article>
           <span class="pipeline-arrow" aria-hidden="true">→</span>
           <article role="listitem">
             <span class="node-number">D</span>
-            <h3>System summary</h3>
-            <p>回答按 query_id 保存；缺失回答按系统失败处理。</p>
-            <small>PUBLIC CONTRACT</small>
+            <h3>生成并保存答案</h3>
+            <p>按题目 ID 保存最终回答，同时记录工具轨迹和错误。</p>
+            <small>输出</small>
           </article>
           <span class="pipeline-arrow" aria-hidden="true">→</span>
           <article role="listitem" class="node-score">
             <span class="node-number">E</span>
-            <h3>3 judges</h3>
-            <p>逐 rubric 二元判断，多数票，再做逐查询宏平均。</p>
-            <small>OFFICIAL GRADER</small>
+            <h3>逐条评分</h3>
+            <p>官方 Grader 对每条标准投票，再汇总每道题得分。</p>
+            <small>评分</small>
           </article>
         </div>
 
         <div class="method-notes">
           <div>
-            <strong>30</strong>
-            <span>rubrics / judge call</span>
+            <strong>220</strong>
+            <span>道公开研究题</span>
           </div>
           <div>
-            <strong>200</strong>
-            <span>官方 FA v2 工具调用上限</span>
+            <strong>11,543</strong>
+            <span>条专家评分标准</span>
           </div>
           <div>
-            <strong>300s</strong>
-            <span>单工具调用上限</span>
+            <strong>3</strong>
+            <span>个官方裁判模型</span>
           </div>
           <div>
             <strong>Macro</strong>
-            <span>先逐题，再跨 220 题平均</span>
+            <span>每道题先评分，再整体平均</span>
           </div>
         </div>
-      </section>
-
-      <section class="section leaderboard-section" id="leaderboard" aria-labelledby="board-title">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="kicker">02 / OFFICIAL PUBLIC RESULTS</p>
-            <h2 id="board-title">Harness 不只是包装</h2>
-          </div>
-          <div class="axis-toggle" aria-label="切换横轴">
-            <button type="button" data-axis="cost" aria-pressed="true">成本 / query</button>
-            <button type="button" data-axis="latency" aria-pressed="false">延迟 / query</button>
-          </div>
-        </div>
-
-        <p class="data-caption">
-          纵轴为官方 rubric qualification rate。成本只含主 Agent 模型，不含搜索、索引或
-          grader。数据更新于 2026-07-21。
-        </p>
-
-        <div class="chart-shell">
-          <div id="tradeoff-chart" class="chart" aria-live="polite"></div>
-          <aside id="chart-detail" class="chart-detail" aria-label="所选系统详情">
-            <p class="loading-copy">正在读取官方 bundle…</p>
-          </aside>
-        </div>
-        <div id="leaderboard-table" class="table-wrap" aria-live="polite"></div>
       </section>
 
       <section class="section demo-section" id="demo" aria-labelledby="demo-title">
         <div class="section-heading split-heading">
           <div>
-            <p class="kicker">03 / EXECUTED LOCALLY</p>
-            <h2 id="demo-title"><span class="heading-phrase">一条真的跑过，</span><wbr /><span class="heading-phrase">而不是画出来的 Demo</span></h2>
+            <p class="kicker">02 / 真实测试</p>
+            <h2 id="demo-title">真实测试实验 Demo</h2>
           </div>
           <div class="demo-score" aria-label="本地透明审计分数">
             <span>14 / 16</span>
@@ -190,76 +163,47 @@
               <span>QUERY 097d482fc529c5f0 · AS OF 2025-02-04</span>
               <p>Provide TSLA's revenue breakdown for the most recent quarter.</p>
             </div>
-            <h3>从两个申报期推导 Q4 2024</h3>
+            <h3>做了什么</h3>
             <p>
-              Agent 解析 2024 10-K 与 2024 Q3 10-Q 的同一组 XBRL 概念，执行
-              <code>FY − 9M</code>，随后检查汽车子项和总收入两层勾稽。
+              读取 Tesla 2024 年 10-K 和 Q3 10-Q，解析 XBRL，用全年减前九个月推导 Q4，
+              再检查各业务收入能否加回总收入。
             </p>
             <div id="demo-facts" class="table-wrap compact-table" aria-live="polite"></div>
           </article>
 
           <aside class="anomaly-panel">
-            <p class="panel-label">REFERENCE AUDIT</p>
-            <h3>Agent 对了，rubric 错了两处</h3>
+            <p class="panel-label">实验发现</p>
+            <h3>出现了什么问题</h3>
             <div id="anomaly-list" aria-live="polite"></div>
             <p class="anomaly-rule">
-              处理原则：保留 SEC 数值，仍按公开 rubric 判失败；异常单独归因，不把它包装成
-              模型失败，也不手工抬分。
+              两条评分标准与 SEC 财报数据对不上。我保留 SEC 计算结果，把两项判为失败，
+              并单独记录为评分标准异常，没有手工抬高分数。
             </p>
           </aside>
         </div>
 
         <div class="provenance-strip" role="list" aria-label="Demo 证据链">
-          <div role="listitem"><b>2</b><span>SEC filings</span></div>
-          <div role="listitem"><b>7 + 7</b><span>FY / Q4 facts</span></div>
-          <div role="listitem"><b>13</b><span>hashed artifacts</span></div>
-          <div role="listitem"><b>0</b><span>hidden corrections</span></div>
+          <div role="listitem"><b>2</b><span>份 SEC 财报</span></div>
+          <div role="listitem"><b>7 + 7</b><span>组全年与季度数据</span></div>
+          <div role="listitem"><b>13</b><span>份哈希校验产物</span></div>
+          <div role="listitem"><b>0</b><span>次手工改分</span></div>
         </div>
       </section>
 
-      <section class="section failure-section" aria-labelledby="failure-title">
+      <section class="section failure-section" id="problems" aria-labelledby="failure-title">
         <div class="section-heading">
-          <p class="kicker">04 / FAILURE IS DATA</p>
-          <h2 id="failure-title">失败没有被删掉</h2>
-          <p>首次成功之前的环境与 Agent 异常都作为独立运行留档。</p>
+          <p class="kicker">03 / 遇到的问题</p>
+          <h2 id="failure-title">跑通过程中遇到了什么问题</h2>
+          <p>成功之前出现过 1 个环境问题和 2 个解析问题，三次失败都保留了错误、轨迹和哈希。</p>
         </div>
         <ol id="failure-timeline" class="failure-timeline" aria-live="polite"></ol>
-      </section>
-
-      <section class="section gaps-section" aria-labelledby="gaps-title">
-        <div class="section-heading">
-          <p class="kicker">05 / WHAT REMAINS</p>
-          <h2 id="gaps-title"><span class="heading-phrase">下一步不是</span><wbr /><span class="heading-phrase">“再做一个玩具”</span></h2>
-        </div>
-        <div class="gaps-grid">
-          <article>
-            <span>NOW</span>
-            <h3>公开链已闭合</h3>
-            <p>数据、来源、Agent、评分、结果格式、展示页、错误与哈希均可检查。</p>
-          </article>
-          <article>
-            <span>NEXT</span>
-            <h3>六类分层小样</h3>
-            <p>补 query-date adapter、FA v2 工具兼容与 ATIF 逐调用成本。</p>
-          </article>
-          <article>
-            <span>GATED</span>
-            <h3>官方三裁判全量</h3>
-            <p>需要三家 API key 与明确预算；完成前不会产生官方可比声明。</p>
-          </article>
-          <article>
-            <span>UNKNOWN</span>
-            <h3>官方榜单提交</h3>
-            <p>公开材料没有第三方入口，必须向 Samaya 单独确认。</p>
-          </article>
-        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>
-        Independent study · Apache-2.0 code · CC-BY-4.0 dataset excerpt ·
-        <a href="research/evidence-register.md">evidence register</a>
+        独立复刻项目 · Apache-2.0 代码 · CC-BY-4.0 数据节选 ·
+        <a href="research/evidence-register.md">查看证据登记表</a>
       </p>
       <p>
         Official sources:
@@ -270,7 +214,7 @@
     </footer>
 
     <div id="data-error" class="data-error" role="alert" hidden>
-      页面数据未能加载。请通过 HTTP 服务或 GitHub Pages 打开，并检查 <code>docs/data</code>。
+      实验数据未能加载。请刷新页面；如果仍然失败，请检查 <code>docs/data</code>。
     </div>
   </body>
 </html>
